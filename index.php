@@ -33,7 +33,7 @@ error_reporting(E_ALL);
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<img target="blank" style="float:left;margin-top:5px;margin-left:5px;height:36px;width:42px;" class="logo" src="tilikauhaSmallLogo.png" alt="logo">
+			<img target="blank" class="navbar-logo" src="tilikauhaSmallLogo.png" alt="logo">
 			<a href="index.php" style="color:black;" class="navbar-brand">Tilikauha.fi</a>
 		</div>
 		<div class="collapse navbar-collapse">
