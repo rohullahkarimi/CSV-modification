@@ -30,9 +30,75 @@
     </div>
 </nav>
 <!--navbar finish-->
-
+<!-- User guide start -->
+<br>
+<div class="container-fluid ohje-osio">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-8 col-md-12">
+            <h2 class="hero">TKO- Tilikauha kirjanpito ohjelma käyttöohje</h2>
+            <hr>
+            <ol>
+                <li>Valitse CSV-tiedosto ja paina luo painiketta</li>
+                <li>Syöttää tarvitteassa jokaiselle riville kahden ALV arvoja muodossa 12,00-13,00</li>
+                <li>Paina "Lähetä" painikke joka löytyy viimeisen rivin jälkeen</li>
+            </ol>
+            <ul>
+                <li>Tarkista muokattu rivit ja lataa muokattu CSV tiedosto</li>
+                <li>Voit tarvitteassa avata CSV-tiedosto LibreOffice tai Excel kautta (sarake erotettu puolipisteellä)</li>
+                <li>Huomaa! luotu CSV-tiedosto sisältää muokattu rivit sekä muuntamattomia riviä</li>
+                <li>Huomaa! Ohjelma ei voi käyttää samaa aikaa enemmän kuin yksi työntekijä.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!-- User guide finish -->
+<br>
 <div class="container">
-
+    <div class="row">
+        <div class="col-md-2">
+            <form action="index.php" method="post" enctype="multipart/form-data">
+                Valitse CSV tiedosto: <input  type="file" name="upload_file" />
+                <br>
+                <input class="btn btn-primary btn-block" type="submit" value="luo" />
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+                <table class="table table-sm">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </div>
+    </div>
 </div>
 </body>
 </html>

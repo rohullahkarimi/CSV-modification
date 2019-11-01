@@ -31,3 +31,59 @@
     height:36px;
     width:42px;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+}
+.ohje-osio{
+  position: relative;
+  margin: 0 auto;
+  background: #333;
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.hero {
+  font-family: 'Roboto Slab', sans-serif;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+h1.hero {
+  font-size: 54px;
+  text-align:justify
+}
+
+h2.hero {
+  font-size: 30px;
+  margin-top: 45px;
+  text-align:justify
+
+}
+
+h2.hero:after {
+  content: "";
+  width: 300px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+li {
+  color: white;
+ text-align:justify
+}
