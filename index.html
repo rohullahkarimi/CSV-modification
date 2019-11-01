@@ -56,49 +56,119 @@
 <!-- User guide finish -->
 <br>
 <div class="container">
-    <div class="row">
-        <div class="col-md-2">
-            <form action="index.php" method="post" enctype="multipart/form-data">
-                Valitse CSV tiedosto: <input  type="file" name="upload_file" />
-                <br>
-                <input class="btn btn-primary btn-block" type="submit" value="luo" />
-            </form>
-        </div>
+  <div class="row">
+    <div class="col-md-2">
+      <form action="index.php" method="post" enctype="multipart/form-data">
+        Valitse CSV tiedosto: <input  type="file" name="upload_file" /><br>
+        <input class="btn btn-primary btn-block" type="submit" value="luo" />
+      </form>
     </div>
-    <br>
-    <div class="row">
-        <div class="col-md-12">
-                <table class="table table-sm">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                          </tr>
-                        </tbody>
-                      </table>
-        </div>
+</div>
+<!--first table start--> 
+<h2> Löydetty rivit muokkaukselle </h2>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">PVM</th>
+      <th scope="col">TOSITELAJI</th>
+      <th scope="col">KUITIN NIMI</th>
+      <th scope="col">TILINUMERO 1</th>
+      <th scope="col">TILINUMERO 2</th>
+      <th scope="col">SUMMA</th>
+      <th scope="col">ALV 24-14</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>01/07/2019</td>
+      <td>7</td>
+      <td>Al Pasha Hyvinkaa</td>
+      <td>4002</td>
+      <td>1710</td>
+      <td>6,6</td>
+      <td><input type="text" name="alv14[]"         maxlength="35" size="10"></td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>01/07/2019</td>
+      <td>7</td>
+      <td>Al Pasha Hyvinkaa</td>
+      <td>4002</td>
+      <td>1710</td>
+      <td>6,6</td>
+      <td><input type="text" name="alv14[]"         maxlength="35" size="10"></td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>01/07/2019</td>
+      <td>7</td>
+      <td>Al Pasha Hyvinkaa</td>
+      <td>4002</td>
+      <td>1710</td>
+      <td>6,6</td>
+      <td><input type="text" name="alv14[]"         maxlength="35" size="10"></td>
+    </tr>
+  </tbody>
+</table>
+<div class="row">
+    <div class="col-md-2">
+      <input class="btn btn-primary btn-block" type="submit" value="Lähetä"/>
+      <!--first table finish-->  
     </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-md-2">
+        <input class="btn btn-success btn-block" type="submit" value="Lataa"/>
+    </div>
+</div>
+<!--second table start-->
+<h2>Muokattu rivit. Ole hyvä tarkista ja lataa CSV-tiedosto</h2>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">PVM</th>
+      <th scope="col">TOSITELAJI</th>
+      <th scope="col">KUITIN NIMI</th>
+      <th scope="col">TILINUMERO 1</th>
+      <th scope="col">TILINUMERO 2</th>
+      <th scope="col">SUMMA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>01/07/2019</td>
+      <td>7</td>
+      <td>Al Pasha Hyvinkaa</td>
+      <td>4002</td>
+      <td>1710</td>
+      <td>6,6</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>01/07/2019</td>
+      <td>7</td>
+      <td>Al Pasha Hyvinkaa</td>
+      <td>4002</td>
+      <td>1710</td>
+      <td>6,6</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>01/07/2019</td>
+      <td>7</td>
+      <td>Al Pasha Hyvinkaa</td>
+      <td>4002</td>
+      <td>1710</td>
+      <td>6,6</td>
+    </tr>
+  </tbody>
+</table>
+<!--second table finish-->
 </div>
 </body>
 </html>
