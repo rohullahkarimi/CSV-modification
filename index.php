@@ -48,6 +48,98 @@ error_reporting(E_ALL);
 <!--navbar finish-->
 <div class="container">
 <style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.section .container {
+  padding: 30px 0 50px 0;
+}
+
+.section.bg {
+  background: #f7f7f7;
+}
+
+.section .slider,
+.section .footer {
+  background: #333;
+}
+
+.slidercontent {
+  text-align: center;
+}
+
+.hero {
+  font-family: 'Roboto Slab', sans-serif;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+h1.hero {
+  font-size: 54px;
+  text-align:justify
+}
+
+h2.hero {
+  font-size: 30px;
+  margin-top: 45px;
+  text-align:justify
+
+}
+
+h2.hero:after {
+  content: "";
+  width: 300px;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+.call {
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.call span {
+  display: inline;
+  border: 1px solid white;
+  padding: 8px 13px;
+  font-size: 20px;
+  transition: background 0.15s linear;
+}
+
+.call span:hover {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+li {
+  color: white; /* bullet color */
+ text-align:justify
+}
+/* finish */
+	
+	
 .myButton {
 	box-shadow: 0px 10px 14px -7px #276873;
 	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
@@ -76,21 +168,28 @@ error_reporting(E_ALL);
 }
 
 </style>
+<!-- User guide start -->
+<div class="section">
+  <div class="slider">
+    <div class="container slidercontent">
+      <h2 class="hero">TKO- Tilikauha kirjanpito ohjelma käyttöohje</h2>
+     	 <ol>
+		  <li>Valitse CSV-tiedosto ja paina luo painnikke</li>
+		  <li>Syöttää tarvitteassa jokaiselle riville kahden ALV arvoja muodossa 12,00-13,00</li>
+		  <li>Paina "Lähetä" painikke joka löytyy viimeisen rivin jälkeen</li>
+		  <li>Tarkista muokattu rivit ja lataa muokattu CSV tiedosto</li>
+		  <li>Voit tarvitteassa avata CSV-tiedosto LibreOffice tai Excel kautta (sarake erotettu puolipisteellä)</li>
+		  <li>Huomaa! luotu CSV-tiedosto sisältää muokattu rivit sekä muuntamattomia riviä</li>
+		  <li>Huomaa! Ohjelma ei voi käyttää samaa aikaa enemmän kuin yksi työntekijä.</li>	
+  		</ol>
+  		<div class="call">
+  			<a href="tel:0408615665" class="smoothScroll btn btn-default">Soita</a>
+  		</div>
+  	</div>
+  </div>
+</div>
+<!-- User guide finish -->
 <?php
-echo '<h1>CSV-tiedosto muokaus ohjelma</h1>';
-echo '<h2>Käyttöohje</h2>
-
-<ol>
-  <li>Valitse CSV-tiedosto ja paina luo painnikke</li>
-  <li>Syöttää tarvitteassa jokaiselle riville kahden ALV arvoja muodossa 12,00-13,00</li>
-  <li>Paina "Lähetä" painikke joka löytyy viimeisen rivin jälkeen</li>
-  <li>Tarkista muokattu rivit ja lataa muokattu CSV tiedosto</li>
-  <li>Voit tarvitteassa avata CSV-tiedosto LibreOffice tai Excel kautta (sarake erotettu puolipisteellä)</li>
-  <li>Huomaa! luotu CSV-tiedosto sisältää muokattu rivit sekä muuntamattomia riviä</li>
-</ol><hr>';
-
-
-
 echo '<form action="index.php" method="post" enctype="multipart/form-data">
  Valitse CSV tiedosto: <input  type="file" name="upload_file" />
  <h2 class="red">1</h2><input class="myButton" type="submit" value="luo" />
