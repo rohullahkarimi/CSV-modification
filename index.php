@@ -24,6 +24,28 @@ error_reporting(E_ALL);
 
 </head>  
 <body>
+<!--navbar start-->
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<img target="blank" style="float:left;margin-top:5px;margin-left:5px;height:36px;width:42px;" class="logo" src="tilikauhaSmallLogo.png" alt="logo">
+			<a href="index.php" style="color:black;" class="navbar-brand">Tilikauha.fi</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a class="smoothScroll" href="#">
+					<span class="glyphicon glyphicon-log-in"></span> Kirjaudu 
+					</a>
+				</li>
+			</ul>
+	</div>
+</nav>
+<!--navbar finish-->
 <div class="container">
 <style>
 .myButton {
